@@ -4,7 +4,6 @@ services:
     container_name: strapi
     build: .
     image: mystrapi:latest
-    restart: on-failure
     env_file: .env
     environment:
       DATABASE_CLIENT: ${DATABASE_CLIENT}
